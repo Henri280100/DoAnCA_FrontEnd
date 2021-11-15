@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="#73BCDD"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    tools:ignore="HardcodedText">
+
+    <ImageView
+        android:id="@+id/img_header_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="A Header Image"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="104dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="72dp"
+        android:contentDescription="userImage"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:src="@drawable/ic_people"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_header_bg"
+        app:layout_constraintTop_toTopOf="@+id/img_header_bg" />
+
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:hint="Username"
+        android:textStyle="bold"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/img_profile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.857" />
+</androidx.constraintlayout.widget.ConstraintLayout>

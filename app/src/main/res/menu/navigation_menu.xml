@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/nav_home"
+        app:cnb_iconColor="#3361BF"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_people"
+        android:title="@string/nav_profile"
+        app:cnb_iconColor="#3361BF"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_friend"
+        android:icon="@drawable/ic_friend_list"
+        android:title="@string/nav_friend"
+        app:cnb_iconColor="#3361BF"
+        app:showAsAction="ifRoom" />
+
+</menu>

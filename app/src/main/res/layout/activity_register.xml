@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_background"
+    tools:context=".ui.activity.RegisterActivity"
+    tools:ignore="HardcodedText">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:id="@+id/layoutSignin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/txtSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/rubik"
+                android:text="Sign up"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtUsername"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtSignup"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:hint="Username"
+                android:textColorHint="#0B0B0B"
+                app:helperTextTextColor="@color/red"
+                app:startIconDrawable="@drawable/ic_user_account"
+                app:startIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/rubik"
+                    android:text="khoapham"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtEmail"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtUsername"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Email"
+                android:textColorHint="#020000"
+                app:endIconTint="@color/black"
+                app:helperTextTextColor="@color/red"
+                app:startIconDrawable="@drawable/ic_email"
+                app:startIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/rubik"
+                    android:inputType="textEmailAddress"
+                    android:text="phamk883@gmail.com"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtPhoneNumb"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtEmail"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="20dp"
+                android:hint="Phone"
+                android:textColorHint="#020000"
+                app:endIconTint="@color/black"
+                app:helperTextTextColor="@color/red"
+                app:startIconDrawable="@drawable/ic_phone"
+                app:startIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/rubik"
+                    android:inputType="phone"
+                    android:text="0905339064"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtPassword"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPhoneNumb"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="@string/password"
+                android:textColorHint="#0B0B0B"
+                app:helperTextTextColor="@color/red"
+                app:startIconDrawable="@drawable/ic_lock"
+                app:startIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/rubik"
+                    android:text="khoa123"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtConfirmPassword"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Confirm password"
+                android:textColorHint="#0B0B0B"
+                app:helperTextTextColor="@color/red"
+                app:startIconDrawable="@drawable/ic_lock"
+                app:startIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/rubik"
+                    android:text="khoa123"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="202dp"
+                android:layout_below="@id/txtConfirmPassword"
+                android:layout_marginTop="-1dp">
+
+
+                <RadioGroup
+                    android:id="@+id/rgGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="140dp"
+                    android:orientation="horizontal"
+                    android:padding="6dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/rdMale"
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/rdFemale"
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:text="Female" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/txtAlreadyHaveAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="104dp"
+                        android:fitsSystemWindows="true"
+                        android:fontFamily="@font/rubik"
+                        android:text="Already have account?"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="104dp"
+                        android:fontFamily="@font/rubik"
+                        android:text="@string/login"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnDone"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="68dp"
+                    android:background="@drawable/custom_button2"
+                    android:fontFamily="@font/rubik"
+                    android:text="DONE"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    app:backgroundTint="#CE000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="50dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="43dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="85dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutVerification"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:autofillHints="Something"
+            android:hint="Your Verification code"
+            android:id="@+id/txtVerifyCode"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="264dp"
+            android:layout_width="300dp"
+            android:minHeight="48dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/custom_button2"
+            android:fontFamily="@font/rubik"
+            android:id="@+id/btnOk"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:text="Ok"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:backgroundTint="#CE000000"
+            app:layout_constraintEnd_toEndOf="@+id/txtVerifyCode"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/txtVerifyCode"
+            app:layout_constraintTop_toBottomOf="@+id/txtVerifyCode" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/custom_button2"
+            android:fontFamily="@font/rubik"
+            android:id="@+id/btnSend"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:text="Send"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:backgroundTint="#CE000000"
+            app:layout_constraintEnd_toEndOf="@+id/btnOk"
+            app:layout_constraintStart_toStartOf="@+id/btnOk"
+            app:layout_constraintTop_toBottomOf="@+id/btnOk" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:contentDescription="@string/imgBackDescription"
+        android:id="@+id/imgBack"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="26dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

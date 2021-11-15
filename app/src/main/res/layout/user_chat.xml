@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    tools:ignore="hardcodedText">
+
+    <TextView
+        android:id="@+id/txtUserChat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_button2"
+        android:backgroundTint="#9F9D9D"
+        android:paddingStart="10dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="10dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imgUser"
+        app:layout_constraintEnd_toStartOf="@+id/imgUser"
+        app:layout_constraintTop_toTopOf="@+id/imgUser" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgUser"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_user_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtUserSeenOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="4dp"
+        android:hint="Seen"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/txtUserChat"
+        app:layout_constraintTop_toBottomOf="@+id/txtUserChat" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgFriend"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_user_account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtFriendChat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/custom_button2"
+        android:backgroundTint="#9F9D9D"
+        android:paddingStart="10dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="10dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imgFriend"
+        app:layout_constraintStart_toEndOf="@+id/imgFriend"
+        app:layout_constraintTop_toTopOf="@+id/imgFriend"
+        app:layout_constraintWidth_default="wrap" />
+
+    <ImageView
+        android:id="@+id/imgFriendDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="@+id/txtFriendChat"
+        app:layout_constraintStart_toEndOf="@+id/txtFriendChat"
+        app:layout_constraintTop_toTopOf="@+id/txtFriendChat"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imgUserDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="@+id/txtUserChat"
+        app:layout_constraintEnd_toStartOf="@+id/txtUserChat"
+        app:layout_constraintTop_toTopOf="@+id/txtUserChat"
+        app:layout_constraintVertical_bias="0.769" />
+
+    <TextView
+        android:id="@+id/txtFriendSeen0n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="44dp"
+        android:hint="Seen"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/txtFriendChat"
+        app:layout_constraintTop_toBottomOf="@+id/txtFriendChat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

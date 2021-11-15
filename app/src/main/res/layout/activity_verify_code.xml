@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.VerifyCodeActivity">
+
+    <TextView
+        android:id="@+id/txtVerifyCode"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/verify_code"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline10" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/pinVerifyCode"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:cursorVisible="true"
+        android:inputType="number"
+        android:itemBackground="#65EAEAEA"
+        app:cursorColor="@color/black"
+        app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemHeight="50dp"
+        app:itemRadius="5dp"
+        app:itemWidth="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtVerifyCode"
+        app:layout_constraintStart_toStartOf="@+id/txtVerifyCode"
+        app:layout_constraintTop_toBottomOf="@+id/txtVerifyCode"
+        app:lineWidth="1dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnVerifyCode"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="@string/btnVerify"
+        android:background="@drawable/custom_button2"
+        android:fontFamily="@font/rubik"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:backgroundTint="#CE000000"
+        app:layout_constraintEnd_toEndOf="@+id/pinVerifyCode"
+        app:layout_constraintStart_toStartOf="@+id/pinVerifyCode"
+        app:layout_constraintTop_toBottomOf="@+id/pinVerifyCode" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="174dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
